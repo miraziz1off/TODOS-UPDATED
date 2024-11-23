@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav_text">
+            <a href="#" id="homepage">HOMEPAGE</a>
+            <a href="#" id="onlyToday">ONLY TODAY</a>
+            <button class="navbarBtn">ADD TODO</button>
+        </div>
+        <p id="taskInfo">HI, YOU HAVE 25 UNDONE TASKS</p>
+    </nav>
+    
+    <main>
+        <section class="today">
+            <p class="alltodos">ALL TODOS</p>
+            <p class="fortoday">FOR TODAY - 5</p>
+            <div class="list_today"></div>
+        </section>
+        <section class="tomarrow">
+            <p class="fortomarrow">TOMARROW - 3</p>
+            <div class="alltodos2"></div>
+        </section>
+
+        <section class="later">
+            <p class="forlater">LATER - 5</p>
+            <div class="alltodos3"></div>
+        </section>
+    </main>
+
+    <div class="modal">
+        <p class="xBtn">X</p>
+        <div class="modal_text">
+            <p>ADD TODOS</p>
+        </div>
+        <input type="text" class="titleInput input" placeholder="Title">
+        <input type="text" class="descriptionInput input" placeholder="Description">
+        <input type="text" class="timeInput input" placeholder="Time">
+        <button class="saveBtn">Save</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

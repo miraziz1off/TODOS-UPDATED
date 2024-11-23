@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Quicksand";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 52px;
+    gap: 67px;
+}
+
+.nav_text {
+    display: flex;
+    gap: 80px;
+    text-decoration: none;
+}
+
+.nav_text a:nth-child(1) {
+    font-size: 24px;
+    font-weight: 900;
+    color: #FFC700;
+    line-height: 30.29px;
+    text-decoration: none;
+}
+
+.nav_text a:nth-child(2) {
+    font-size: 24px;
+    font-weight: 900;
+    color: #A5A5B4;
+    line-height: 30.29px;
+    text-decoration: none;
+}
+
+nav p {
+    font-size: 24px;
+    font-weight: 900;
+    color: #000000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 53px;
+    gap: 103px;
+}
+
+.alltodos {
+    font-size: 48px;
+    color: #000000;
+    line-height: 59.42px;
+    font-weight: 700;
+}
+
+.today {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 39px;
+    gap: 34px;
+}
+
+.fortoday {
+    font-size: 24px;
+    font-weight: 900;
+    color: #FFC700;
+}
+
+.list_today,
+.alltodos2,
+.alltodos3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    width: 629px;
+    height: 123px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background-color: #F0F0F0;
+    padding: 24px;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.input_today {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border-radius: 3px;
+}
+
+.checkbox:checked {
+    background-color: #FFC700;
+}
+
+.dayoftodo {
+    font-size: 16px;
+    color: #FFC700;
+    font-weight: 600;
+}
+
+.desc {
+    font-size: 16px;
+    font-weight: 500;
+    color: #A5A5B4;
+}
+
+.fortomarrow {
+    font-size: 24px;
+    color: #A5A5B4;
+    font-weight: 600;
+}
+
+.forlater {
+    font-size: 24px;
+    color: #A5A5B4;
+    font-weight: 600;
+}
+
+.tomarrow,
+.later {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.navbarBtn{
+    width: 200px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #FFC700;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    position: fixed;
+    display: none;
+    bottom: 240px;
+    left: 570px;
+}
+.modal p{
+    font-size: 64px;
+    font-weight: 900;
+    color: #FFC700;
+}
+.modal input{
+    width: 360px;
+    height: 3rem;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.saveBtn{
+    width: 360px;
+    height: 3rem;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: #FFC700;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+}
+.input:focus{
+    border: 1px solid #FFC700;
+    padding-bottom: 25px;
+    transition: .2s ease;
+}
+.saveBtn:hover{
+    opacity: .5;
+    transition: .1s ease;
+}
+.xBtn{
+    color: black !important;
+    cursor: pointer;
+    filter: blur(1px);
+}
+.xBtn2{
+    
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: end;
+    color: red;
+
+}
