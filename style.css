@@ -172,10 +172,7 @@ main {
     justify-content: center;
     flex-direction: column;
     gap: 8px;
-    position: fixed;
     display: none;
-    bottom: 240px;
-    left: 570px;
 }
 .modal p{
     font-size: 64px;
@@ -222,4 +219,11 @@ main {
     text-align: end;
     color: red;
 
+}
+.mainmodal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-left: 750px;
 }
